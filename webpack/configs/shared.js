@@ -58,8 +58,13 @@ module.exports = env => ({
         ],
       },
       {
-        test: /\.html$/,
-        use: 'html-loader',
+        test: /\.html$/i,
+        use: {
+          loader: 'html-loader',
+          options: {
+            interpolate: true,
+          },
+        },
       },
       {
         test: /\.hbs$/,

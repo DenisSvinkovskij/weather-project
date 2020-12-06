@@ -5,11 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Weather Project</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"
+    />
   </head>
-  <body>       
+  <body>
+    <div class="container">
+      <!-- Это я просто всял для примера что бы подключить -->
+      <div class="search__form">
+        <input
+          onfocus="this.value=''"
+          type="text"
+          placeholder="search city"
+          class="search__input"
+        />
+      </div>
+
+      ${require('./partials/maps.html')}
+    </div>
+
+    <script
+      id="googleMaps"
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsYVwR1GI__xOQd_aehUGn4XbaF_K7l4Q"
+      data-id="map"
+    ></script>
   </body>
 </html>
